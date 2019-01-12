@@ -5,4 +5,4 @@
 *.ipr
 
 target/
-.mvn/wrapper
+.mvn/
