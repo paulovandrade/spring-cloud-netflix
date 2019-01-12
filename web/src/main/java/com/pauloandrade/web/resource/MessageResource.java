@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MessageResource {
 
+    private static String msgFallback = "Vish deu ruim";
+
     @Autowired
     private MessageService messageService;
 
@@ -20,6 +22,6 @@ public class MessageResource {
     }
 
     public String fallback() {
-        return "Vish deu ruim!";
+        return msgFallback;
     }
 }

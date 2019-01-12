@@ -1,19 +1,17 @@
 package com.pauloandrade.client.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class MessageDTO {
 
     private String message;
     private int clientPort;
     private int webPort;
-
-    public MessageDTO() {
-    }
-
-    public MessageDTO(String message, int clientPort, int webPort) {
-        this.message = message;
-        this.clientPort = clientPort;
-        this.webPort = webPort;
-    }
 
     public String getMessage() {
         return message;
